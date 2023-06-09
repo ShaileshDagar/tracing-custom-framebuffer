@@ -1,0 +1,72 @@
+execve("./drm-framebuffer", ["./drm-framebuffer", "-d", "/dev/dri/card0", "-c", "HDMI-A-1"], 0x7fdf7d8cd0 /* 32 vars */) = 0
+brk(NULL)                               = 0x55973e3000
+faccessat(AT_FDCWD, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=85939, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 85939, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f94b01000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libdrm.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=92104, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f94b4c000
+mmap(NULL, 223800, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f94aca000
+mmap(0x7f94ad0000, 158264, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0x7f94ad0000
+munmap(0x7f94aca000, 24576)             = 0
+munmap(0x7f94af7000, 39480)             = 0
+mprotect(0x7f94ae6000, 61440, PROT_NONE) = 0
+mmap(0x7f94af5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x7f94af5000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0p}\2\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=1673696, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 1842496, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9490e000
+mmap(0x7f94910000, 1776960, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0x7f94910000
+munmap(0x7f9490e000, 8192)              = 0
+munmap(0x7f94ac2000, 56640)             = 0
+mprotect(0x7f94aa0000, 65536, PROT_NONE) = 0
+mmap(0x7f94ab0000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x190000) = 0x7f94ab0000
+mmap(0x7f94ab6000, 48448, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f94ab6000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f94b4a000
+set_tid_address(0x7f94b4a0f0)           = 7177
+set_robust_list(0x7f94b4a100, 24)       = 0
+rseq(0x7f94b4a7c0, 0x20, 0, 0xd428bc00) = -1 ENOSYS (Function not implemented)
+mprotect(0x7f94ab0000, 16384, PROT_READ) = 0
+mprotect(0x7f94af5000, 4096, PROT_READ) = 0
+mprotect(0x5564719000, 4096, PROT_READ) = 0
+mprotect(0x7f94b50000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x7f94b01000, 85939)             = 0
+openat(AT_FDCWD, "/dev/dri/card0", O_RDWR) = 3
+ioctl(3, DRM_IOCTL_MODE_GETRESOURCES, 0x7ffb6038a0) = 0
+getrandom("\x6f\xe8\x96\xd5\xb6\x96\x41\x17", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x55973e3000
+brk(0x5597404000)                       = 0x5597404000
+ioctl(3, DRM_IOCTL_MODE_GETRESOURCES, 0x7ffb6038a0) = 0
+ioctl(3, DRM_IOCTL_MODE_GETCONNECTOR, 0x7ffb603850) = 0
+ioctl(3, DRM_IOCTL_MODE_GETCONNECTOR, 0x7ffb603850) = 0
+ioctl(3, DRM_IOCTL_MODE_GETCONNECTOR, 0x7ffb603850) = 0
+ioctl(3, DRM_IOCTL_MODE_GETCONNECTOR, 0x7ffb603850) = 0
+ioctl(3, DRM_IOCTL_MODE_CREATE_DUMB, 0x7ffb6039f0) = 0
+ioctl(3, DRM_IOCTL_MODE_ADDFB, 0x7ffb6038c8) = 0
+ioctl(3, DRM_IOCTL_MODE_GETENCODER, 0x7ffb6038d0) = 0
+ioctl(3, DRM_IOCTL_MODE_GETCRTC, 0x7ffb603880) = 0
+ioctl(3, DRM_IOCTL_MODE_MAP_DUMB, 0x7ffb603958) = 0
+mmap(NULL, 4227072, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0x100000000) = 0x7f94508000
+ioctl(3, DRM_IOCTL_DROP_MASTER, 0)      = 0
+openat(AT_FDCWD, "/dev/urandom", O_RDONLY) = 4
+read(4, 0x7f94508000, 4227072)          = 4227072
+close(4)                                = 0
+ioctl(3, DRM_IOCTL_SET_MASTER, 0)       = 0
+ioctl(3, DRM_IOCTL_MODE_SETCRTC, 0x7ffb603850) = 0
+ioctl(3, DRM_IOCTL_MODE_SETCRTC, 0x7ffb603850) = 0
+ioctl(3, DRM_IOCTL_DROP_MASTER, 0)      = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM], NULL, 8) = 0
+rt_sigtimedwait([INT TERM], {si_signo=SIGINT, si_code=SI_KERNEL, si_int=85500, si_ptr=0x59c055600014dfc}, NULL, 8) = 2 (SIGINT)
+ioctl(3, DRM_IOCTL_SET_MASTER, 0)       = 0
+ioctl(3, DRM_IOCTL_MODE_SETCRTC, 0x7ffb6038e0) = 0
+ioctl(3, DRM_IOCTL_MODE_GETFB, 0x7ffb603920) = 0
+ioctl(3, DRM_IOCTL_MODE_DESTROY_DUMB, 0x7ffb603960) = -1 EINVAL (Invalid argument)
+close(3)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
